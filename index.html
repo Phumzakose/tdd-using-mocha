@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"
+      charset="utf-8"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.min.js"></script>
+  </head>
+
+  <body>
+    <div id="mocha"></div>
+    <script>
+      mocha.setup("bdd");
+      var assert = chai.assert;
+    </script>
+
+    <script src="greet.js"></script>
+    <script src="test/greet.tests.js"></script>
+    <script src="isFromBellvile.js"></script>
+    <script src="test/isFromBellvile.tests.js"></script>
+    <script src="regCheck.js"></script>
+    <script src="test/regCheck.tests.js"></script>
+    <script src="isWeekday.js"></script>
+    <script src="test/isWeekday.tests.js"></script>
+    <script src="yearsAgo.js"></script>
+    <script src="test/yearsAgo.tests.js"></script>
+    <script src="countRegNumber.js"></script>
+    <script src="test/countRegNumber.tests.js"></script>
+    <script src="countAllPaarl.js"></script>
+    <script src="test/countAllPaarl.tests.js"></script>
+    <script src="allFromTown.js"></script>
+    <script src="test/allFromTown.tests.js"></script>
+    <script src="transportFee.js"></script>
+    <script src="test/transportFee.tests.js"></script>
+    <script src="totalPhoneBill.js"></script>
+    <script src="test/totalPhoneBill.tests.js"></script>
+    <script src="fromWhere.js"></script>
+    <script src="test/fromWhere.tests.js"></script>
+    <script src="findItemsOver20.js"></script>
+    <script src="test/findItemsOver20.tests.js"></script>
+    <script src="findItemsOver.js"></script>
+    <script src="test/findItemsOver.tests.js"></script>
+    <script src="mostProfitableDepartment.js"></script>
+    <script src="test/mostProfitableDepartment.tests.js"></script>
+    <script>
+      mocha.checkLeaks();
+      mocha.run();
+    </script>
+  </body>
+</html>
