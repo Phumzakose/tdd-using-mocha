@@ -1,12 +1,12 @@
-describe("the greet function", function () {
+describe("The greet function", function () {
   it("should greet phumza with 'Hello, phumza'", function () {
-    assert.equal("Hello, phumza", greet("phumza"));
+    assert.equal("Hello, Phumza", greet("Phumza"));
   });
 
   it("should greet kamva with 'Hello, kamva'", function () {
-    assert.equal("Hello, kamva", greet("kamva"));
+    assert.equal(greet(""), "Invalid input");
   });
   it("should greet Themba with 'Hello, Themba'", function () {
-    assert.equal("Hello, Themba", greet("Themba"));
+    assert.equal(greet(123), "error");
   });
 });
