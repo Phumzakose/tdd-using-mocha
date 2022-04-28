@@ -3,10 +3,10 @@ describe("The greet function", function () {
     assert.equal("Hello, Phumza", greet("Phumza"));
   });
 
-  it("should greet kamva with 'Hello, kamva'", function () {
+  it("should return invalid when an empty string is passed", function () {
     assert.equal(greet(""), "Invalid input");
   });
-  it("should greet Themba with 'Hello, Themba'", function () {
+  it("should return an error when a number is passed", function () {
     assert.equal(greet(123), "error");
   });
 });
